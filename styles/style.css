@@ -1,0 +1,85 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --black: #000; 
+  --grey: #aaa;
+  --light-grey: #ebe6e6;
+  --dark-gray: #666;
+  --cian: #00ffff;
+  --dark-cian: #45c5c5;
+  --white: #fff;
+  --first-bg: -webkit-linear-gradient(left, #00e2d4 0%, #00ffee 50%, #3afff9 50%, #81fffa 70%, #c0fffc 90%, #edfffd 100%); 
+  --keyboard-bg: linear-gradient(to bottom, #e9e6e6 0%, #fff0fc 50%, #cccccc 100%);
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: 'Montserrat', sans-serif;
+  background: var(--first-bg);
+  min-height: 100vh;
+}
+
+input {
+  border: none;
+  color: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  font-family: inherit;
+}
+
+h1 {
+  font-family: 'Montserrat', sans-serif;
+  margin-bottom: 35px;
+  font-size: 2rem;
+  font-weight: bold;
+  margin-top: 0;
+}
+
+.teclado {
+  background: var(--keyboard-bg);
+  box-shadow: 6px 8px 0 6px var(--dark-gray), 10px 10px 10px var(--black);
+  border-radius: 30px;
+  display: grid;
+  gap: 15px;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 15px;
+}
+
+.tecla {
+  background-color: var(--white);
+  border-radius: 30px;
+  box-shadow: 3px 3px 0 var(--grey);
+  color: var(--dark-cian);
+  cursor: pointer;
+  height: 80px;
+  font-size: 1.75em;
+  font-weight: bold;
+  line-height: 80px;
+  text-align: center;
+  width: 100px;
+}
+
+.tecla.activa,
+.tecla:active {
+  background-color: var(--cian);
+  box-shadow: 3px 3px 0 var(--dark-cian) inset;
+  color: var(--white);
+  outline: none;
+}
+
+input[type=tel] {
+  background: var(--light-grey);
+  border-radius: 10px;
+  font-family: monospace;
+  font-size: 18px;
+  height: 40px;
+  margin-bottom: 24px;
+  padding: 10px;
+  text-align: center;
+  width: 330px;
+}
+

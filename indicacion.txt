@@ -1,0 +1,12 @@
+ 08 Haga lo que hicimos en aula: utilizando el bucle For
+PRÓXIMA ACTIVIDAD
+
+Como vimos en esta lección, usamos la estructura de repetición for para recorrer una lista de manera más optimizada. En su declaración, creamos la variable contador de repetición, la condición de interrupción de las repeticiones y la condición de incremento de la variable contador.
+
+A partir de este código en CodePen, realiza lo siguiente:
+
+Un script que recorra la lista de teclas de AluraFone y, al hacer clic en cualquier tecla del teclado, imprima el valor en el campo "Ingresa tu teléfono".
+Instrucciones:
+
+Abre el enlace de CodePen;
+Abre la pestaña "JS" y escribe tu código dentro de ella.
